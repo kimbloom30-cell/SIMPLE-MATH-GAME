@@ -1,41 +1,45 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    padding: 50px;
+    margin: 50px;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #333;
 }
 
 #question {
-    font-size: 2em;
+    font-size: 24px;
     margin: 20px 0;
 }
 
-button {
+#answer {
+    padding: 10px;
+    font-size: 18px;
+    width: 200px;
+}
+
+#submit {
     padding: 10px 20px;
-    margin: 5px;
-    font-size: 1.2em;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
     cursor: pointer;
 }
 
-button:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
+#submit:hover {
+    background-color: #45a049;
 }
 
 #feedback {
-    margin: 15px 0;
-    font-size: 1.2em;
+    font-size: 20px;
+    margin: 20px 0;
+    color: #d9534f; /* Red for wrong, green for correct (set in JS) */
 }
 
 #score {
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-@keyframes pop {
-    0% { transform: scale(0.5); opacity: 0; }
-    100% { transform: scale(1); opacity: 1; }
-}
-
-.options button {
-    width: 80px;
+    font-size: 18px;
+    margin-top: 20px;
 }
